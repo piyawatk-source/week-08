@@ -55,4 +55,17 @@ class Field {
     const display = this.field.map((row) => row.join("")).join("\n");
     console.log(display);
   }
+
+  moveUp() {
+    this.playerRow -= 1;
+  }
+  moveDown() {
+    this.playerRow += 1;
+  }
+  moveLeft() {
+    this.playerCol -= 1;
+  }
+  moveRight() {
+    this.playerCol += 1;
+  }
 }
